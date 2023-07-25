@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class toysMenu {
 
     public static void anyToys() {
-        List <toys> toyList = Arrays.isList(
+        List <toys> toyList = Arrays.asList(
             new toys(1, "softMouse", 30),
             new toys(2, "redCar", 20),
             new toys(3, "dragonBall", 50)
@@ -28,7 +28,7 @@ public class toysMenu {
                 System.out.print("\033[H\033[J");
                 switch (button) {
                     case "1":
-                        givePrize.add(ts.drawToys(toyList));
+                        givePrize.add(ts.dropToys(toyList));
                         System.out.println("Игрушки: " + givePrize);
                         break;
                     case "2":
