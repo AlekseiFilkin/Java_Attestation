@@ -6,10 +6,10 @@ import java.util.Scanner;
 public class toysMenu {
 
     public static void anyToys() {
-        List <Toy> toyList = Arrays.isList(
-            new Toy(1, "softMouse", 10),
-            new Toy(2, "redCar", 20),
-            new Toy(3, "dragonBall", 50)
+        List <toys> toyList = Arrays.isList(
+            new toys(1, "softMouse", 30),
+            new toys(2, "redCar", 20),
+            new toys(3, "dragonBall", 50)
         );
         System.out.println(toyList);
 
