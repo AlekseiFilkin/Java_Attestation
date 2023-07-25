@@ -36,10 +36,10 @@ public class toys {
     @Override
     public String toString () {
         return "Toy: " +
-                "id =" + id +
-                ", name ='" + name + '\'' +
-                "quantity =" + toyQuantity +
-                "frequency = " + frequency +
+                "id = " + id +
+                ", name = " + name +
+                " quantity = " + toyQuantity +
+                " frequency = " + frequency +
                 '%' + "\n";
     }
 } 

@@ -22,6 +22,8 @@ public class toyShop {
             result = toys.get(1).getId();
         } else if (rand < 56) {
             result = toys.get(2).getId();
+        } else if (rand < 85) {
+            result = toys.get(3).getId();
         } else {
             result = toys.get(4).getId();
         }
@@ -29,13 +31,13 @@ public class toyShop {
         return result;
     }
 
-    DataWriter dw = new DataWriter();
+    Recorder rec = new Recorder();
     public void getToys (ArrayList<Integer> givePrize, List<toys> toys) {
         int id = givePrize.get(0) - 1;
         givePrize.remove(0);
         allToys = allToys -1;
         toys.get(id).setToyQantity(toys.get(id).getToyQuantity() -1);
-        dw.writeToFile(toys.get(id));
+        rec.writeToFile(toys.get(id));
         System.out.println("Вам досталась: " + givePrize);
         System.out.println("Осталось " + allToys + " игрушек");
     }
@@ -43,5 +45,7 @@ public class toyShop {
     public void addToy (toys toy) {
         toys.add(toy);
         allToys++;
+    }
+    public void addToy() {
     }
 }

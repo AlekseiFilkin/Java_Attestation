@@ -1,0 +1,5 @@
+2, Car
+5, Kinder
+1, Mouse
+2, Car
+4, Tamagochi
